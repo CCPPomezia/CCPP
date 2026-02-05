@@ -97,43 +97,31 @@
       </p>
     </section>
 
-    <section id="galleria" class="section alt">
-      <div class="container">
-        <h2>Galleria fotografica</h2>
-       <!-- <p>Immagini del territorio, eventi, idee di spazi o rendering del centro. Sostituisci i placeholder con le tue foto in images/gallery/.</p> -->
-
-        <div class="gallery-grid" aria-live="polite">
-          <!-- 8 immagini di esempio: aggiungi i file in images/gallery/ -->
-          <button class="gallery-item" data-full="images/gallery/photo1.jpg" aria-label="Apri foto 1">
-            <img src="https://res.cloudinary.com/dtjwitvy2/image/upload/v1770332606/WhatsApp_Image_2026-01-31_at_12.32.56_1_chwlsk.jpg" alt="Foto: strada / attività locale" loading="lazy"/>
-          </button>
-          <button class="gallery-item" data-full="images/gallery/photo2.jpg" aria-label="Apri foto 2">
-            <img src="images/gallery/photo2_thumb.jpg" alt="Foto: evento / incontro" loading="lazy"/>
-          </button>
-          <button class="gallery-item" data-full="images/gallery/photo3.jpg" aria-label="Apri foto 3">
-            <img src="images/gallery/photo3_thumb.jpg" alt="Foto: spazi pubblici" loading="lazy"/>
-          </button>
-          <button class="gallery-item" data-full="images/gallery/photo4.jpg" aria-label="Apri foto 4">
-            <img src="images/gallery/photo4_thumb.jpg" alt="Foto: giovani al lavoro" loading="lazy"/>
-          </button>
-          <button class="gallery-item" data-full="images/gallery/photo5.jpg" aria-label="Apri foto 5">
-            <img src="images/gallery/photo5_thumb.jpg" alt="Foto: incontri intergenerazionali" loading="lazy"/>
-          </button>
-          <button class="gallery-item" data-full="images/gallery/photo6.jpg" aria-label="Apri foto 6">
-            <img src="images/gallery/photo6_thumb.jpg" alt="Foto: laboratorio artistico" loading="lazy"/>
-          </button>
-          <button class="gallery-item" data-full="images/gallery/photo7.jpg" aria-label="Apri foto 7">
-            <img src="images/gallery/photo7_thumb.jpg" alt="Foto: sport e attività" loading="lazy"/>
-          </button>
-          <button class="gallery-item" data-full="images/gallery/photo8.jpg" aria-label="Apri foto 8">
-            <img src="images/gallery/photo8_thumb.jpg" alt="Foto: rendering / idea di progetto" loading="lazy"/>
-          </button>
+     <section class="slideshow" aria-label="Galleria immagini">
+      <div class="slides">
+        <div class="slide active">
+          <img src="images/photo1.jpg" alt="Descrizione foto 1">
         </div>
+        <div class="slide">
+          <img src="images/photo2.jpg" alt="Descrizione foto 2">
+        </div>
+        <div class="slide">
+          <img src="images/photo3.jpg" alt="Descrizione foto 3">
+        </div>
+        <!-- aggiungi altre slide come sopra -->
+      </div>
+       
 
-        <p class="muted">Suggerimento: crea thumbnail ridotte per migliore performance (es. lato max 1200px per le full, 800px per i thumb).</p>
+      <button class="control prev" aria-label="Slide precedente">&lsaquo;</button>
+      <button class="control next" aria-label="Slide successiva">&rsaquo;</button>
+
+      <div class="dots" role="tablist" aria-label="Selettore slide">
+        <button class="dot active" data-index="0" aria-label="Vai alla slide 1"></button>
+        <button class="dot" data-index="1" aria-label="Vai alla slide 2"></button>
+        <button class="dot" data-index="2" aria-label="Vai alla slide 3"></button>
       </div>
     </section>
-
+ <script src="slideshow.js"></script>
     <section id="contatti" class="section container">
       <h2>Contattaci</h2>
       <p>Usa il form per scriverci e richiedere informazioni sulla raccolta firme.</p>
