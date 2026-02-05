@@ -152,11 +152,12 @@ body{
   margin: 0;
   padding: 20px;
   background: #f8f8f8;
-  display: flex;
+/*  display: flex; */
   justify-content: center;
 }
 
 .slideshow{
+  margin: 0 auto ;
   width: var(--width);
   max-width: var(--max-width);
   position: relative;
