@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const endpoint = form.action || 'https://formspree.io/f/xqedzwje';
 
       try {
-        const resp = await fetch(endpoint, {
+        const resp = await fetch("https://formspree.io/f/xqedzwje", {
           method: 'POST',
           headers: { 'Accept': 'application/json' },
           body: data
