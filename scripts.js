@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
       status.textContent = 'Invio in corso...';
 
       const data = new FormData(form);
-      const endpoint = form.action || 'https://formspree.io/f/your-id-here';
+      const endpoint = form.action || 'https://formspree.io/f/xqedzwje';
 
       try {
         const resp = await fetch(endpoint, {
